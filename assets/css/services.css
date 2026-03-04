@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700&display=swap');
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #040404;
+  color: #fff;
+  position: relative;
+  background: transparent;
+
+}
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -1;
+}
+@font-face {
+  font-family: "bootstrap-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/static/my_portfolio/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2") format("woff2"),
+       url("/static/my_portfolio/vendor/bootstrap-icons/fonts/bootstrap-icons.woff") format("woff");
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: ease-in-out 0.3s;
+  position: relative;
+  align-items: center;
+  z-index: 997;
+  overflow-y: auto;
+}
+#header * {
+  transition: ease-in-out 0.3s;
+}
+#header h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: 'Oxanium', cursive;
+  
+}
+
+#header h1 a, #header h1 a:hover {
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  #header h1 {
+    font-size: 20px;
+  }
+
+  #header .container {
+    display: flex;
+    align-items: center;
+  }
+
+  #header nav li a {
+    font-size: 14px;
+  }
+}
+
+
+a {
+  color: #1bc4f8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6eddff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, #header .lead {
+  font-family: 'Oxanium', cursive;
+}
+
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+
+  #header .lead {
+    line-height: 2.5rem;
+  }
+  
+}
+
+
+section .container {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: 'Oxanium', cursive;
+}
+
+.section-title p {
+    margin: 0;
+    margin: -15px 0 15px 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #fff;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4da4ea;
+    margin: 4px 10px;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  background: rgba(204, 204, 204, 0.1);
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+}
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #1bc4f8;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+.services .icon-box .icon .bi {
+  color: #fff;
+  width: 28px;
+  height: 28px;
+}
+.services .icon-box .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.services .icon-box h4 a {
+  color: #fff;
+}
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.services .icon-box:hover {
+  background: #1bc4f8;
+  border-color: #1bc4f8;
+}
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+.services .icon-box:hover .icon .bi {
+  color: #6eddff;
+}
+.services .icon-box:hover .icon::before {
+  background: #6eddff;
+}
+.services .icon-box:hover h4 a, .services .icon-box:hover p {
+  color: #fff;
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://victorokolie.com/sitemap.xml

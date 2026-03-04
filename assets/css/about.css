@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700&display=swap');
+
+/*--------------------------------------------------------------
+# Portfolio Details
+--------------------------------------------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: #040404;
+  color: #fff;
+  position: relative;
+  background: transparent;
+
+}
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -1;
+}
+@font-face {
+  font-family: "bootstrap-icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("/static/my_portfolio/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2") format("woff2"),
+       url("/static/my_portfolio/vendor/bootstrap-icons/fonts/bootstrap-icons.woff") format("woff");
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: ease-in-out 0.3s;
+  position: relative;
+  align-items: center;
+  z-index: 997;
+  overflow-y: auto;
+}
+#header * {
+  transition: ease-in-out 0.3s;
+}
+#header h1 {
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  font-family: 'Oxanium', cursive;
+  
+}
+
+#header h1 a, #header h1 a:hover {
+  color: #fff;
+  line-height: 1;
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  #header h1 {
+    font-size: 20px;
+  }
+
+  #header .container {
+    display: flex;
+    align-items: center;
+  }
+
+  #header nav li a {
+    font-size: 14px;
+  }
+}
+
+
+a {
+  color: #1bc4f8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6eddff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, #header .lead {
+  font-family: 'Oxanium', cursive;
+}
+
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+
+  #header .lead {
+    line-height: 2.5rem;
+  }
+  
+}
+
+section .container {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+}
+
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: 'Oxanium', cursive;
+}
+
+.section-title p {
+    margin: 0;
+    margin: -15px 0 15px 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #fff;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4da4ea;
+    margin: 4px 10px;
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about-me .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #1bc4f8;
+}
+.about-me .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about-me .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.about-me .content ul strong {
+  margin-right: 10px;
+}
+.about-me .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #1bc4f8;
+  line-height: 0;
+}
+.about-me .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+.skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: 'Oxanium', cursive;
+  color: #fff;
+}
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+.skills .progress-bar-wrap {
+  background: rgba(255, 255, 255, 0.2);
+}
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #1bc4f8;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Stats Section
+--------------------------------------------------------------*/
+.stats svg {
+  background-color: #1a1a1a;
+  color: #1bc4f8;
+  fill: #1bc4f8;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  width: 54px;
+  height: 54px;
+  padding: 12px;        /* controls how much space around the icon */
+  border-radius: 50%;
+  border: 2px solid #000000;
+  box-sizing: border-box;  /* ensures padding doesn't push beyond 54px */
+  flex-shrink: 0;          /* prevents it from squishing in flex layouts */
+  z-index: 1;
+}
+
+.stats .stats-item {
+  background-color: #1a1a1a;
+  margin-top: -27px;
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.stats .stats-item span {
+  font-size: 36px;
+  display: block;
+  font-weight: 700;
+  color: color-mix(in srgb, #fafafa, transparent 20%);
+}
+
+.stats .stats-item h3 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 16px;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.find-me {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.find-me h3 {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.find-me p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.find-me .social-links a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  line-height: 1;
+  margin: 0 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.find-me .social-links a:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  text-decoration: none;
+}
+
+.find-me .copyright {
+  padding-top: 25px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.find-me .credits {
+  font-size: 13px;
+  padding-top: 5px;
+}
