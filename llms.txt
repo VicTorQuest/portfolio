@@ -1,0 +1,21 @@
+# Victor Okolie
+
+> Full-Stack & Web3 Developer specializing in Django, Python, Solidity, and scalable web systems.
+
+## About
+- [About](https://victorokolie.com/about/): Background, skills, and developer journey
+
+## Work
+- [Experience](https://victorokolie.com/experience/): Professional work history and roles
+- [Services](https://victorokolie.com/services/): Services offered including API development, smart contracts, SEO, and more
+- [Resume](https://victorokolie.com/resume/): Downloadable resume
+
+## Projects
+- [Projects](https://victorokolie.com/projects/): Full project portfolio
+- [Gbese App](https://victorokolie.com/projects/gbese-app/): Web3 project
+- [Quest Coding](https://victorokolie.com/projects/quest-coding/): Web project
+- [Slize](https://victorokolie.com/projects/slize/): Web project
+- [Ventree](https://victorokolie.com/projects/ventree/): Web project
+
+## Contact
+- [Contact](https://victorokolie.com/contact/): Get in touch via email or social media
