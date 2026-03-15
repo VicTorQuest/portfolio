@@ -1,6 +1,6 @@
 # Victor Okolie
 
-> Full-Stack & Web3 Developer specializing in Django, Python, Solidity, and scalable web systems.
+> Backend & Web3 Developer specializing in Django, Python, Solidity, and scalable web systems.
 
 ## About
 - [About](https://victorokolie.com/about/): Background, skills, and developer journey
